@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+ height: 100px;
+ width: 100px;
+ border: 1px solid;
+ transition-property: height, width;
+ transition-duration: 1s, 500ms;
+ transition-timing-function: linear;
+ transition-delay: 0s, 1s;
+}
+div:hover {
+ height: 200px;
+ width: 200px;
+}
+</style>
+</head>
+<body>
+    <div>
+        transition-property: Specifies the CSS properties the transition effect is for. In this case, the div will expand
+both horizontally and vertically when hovered.
+transition-duration: Specifies the length of time a transition takes to complete. In the above example, the
+height and width transitions will take 1 second and 500 milliseconds respectively.
+transition-timing-function: Specifies the speed curve of the transition effect. A linear value indicates the
+transition will have the same speed from start to finish.
+transition-delay: Specifies the amount of time needed to wait before the transition effect starts. In this case,
+the height will start transitioning immediately, whereas the width will wait 1 second.
+    </div>
+</body>
+</html>
